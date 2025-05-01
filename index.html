@@ -2,15 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My 3D Portfolio</title>
-  <style>
-    body { font-family: sans-serif; padding: 2rem; }
-    button { padding: 10px 20px; font-size: 16px; }
-  </style>
+  <title>Cecilia Löf Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Welcome to My 3D Portfolio</h1>
-  <p>Click below to see my 3D Duck Model in action:</p>
-  <button onclick="window.location.href='duckmodel.html'">View Duck Model</button>
+ <div id="main">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="index.html">Cecilia Löf</a></h1>
+    </div>
+    <div id="menu_bar">
+      <div class="tab" id="about-me"><a href="index.html">About Me</a></div>
+      <div class="tab" id="portfolio"><a href="portfolio.html">Portfolio</a></div>
+    </div>
+  </div>
+  <div id="main_content">
+    <div class="column left">
+      <h2>About Me</h2>
+      <div id="about_me">
+      <p>Hi, my name is Cecilia Löf</p>
+      <p>I like making 3D art and video games, and i have a lot of creative ideas and projects going on.
+        You can find my projects in the portfolio tab.
+      </p>
+      <br>
+      <p>I have a Bachelor's degree in Philosophy, majoring in Informatics.<br> Specialization: <b>Digital Media Production</b>.</p>
+      <br>
+      <hr>
+      <h2>Where to find me</h2>
+      <p>&#128188<a href="https://se.linkedin.com/in/cecilia-l%C3%B6f-10552b361" target="_blank">Linkedin</a></p>
+      </div>
+    </div>
+    <div class="column right">
+      <h2>Experience</h2>
+      <p>Primary usage and experience in <b>bold</b></p>
+      <br>
+      <div id="about_me_right">
+      <p>&#128302<b>Blender</b></p> 
+        <ul>
+        <li><i><b>3D modelling</b></i></li>
+        <li><i>Animation</i></li>
+        <li><i>Rigging</i></li>
+        <li><i>Texturing</i></li>
+        </ul>
+      
+        <p>&#128187<b>Programming</b></p> 
+        <ul>
+        <li><i><b>C#</b></i></li>
+        <li><i>HTML & CSS</i></li>
+        <li><i>GDScript</i></li>
+        </ul>
+
+        <p>&#127918<b>Game Development</b></p> 
+        <ul>
+        <li><i><b>Unity</b></i></li>
+        <li><i>Godot</i></li>
+        <li><i>Unreal</i></li>
+        </ul>
+
+        <p>&#127912<b>Other Software</b></p> 
+        <ul>
+        <li><i><b>Krita</b></i></li>
+        <li><i>Photoshop</i></li>
+        <li><i>Illustrator</i></li>
+        </ul>
+      
+    </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p>Cecilia Löf 2025</p>
+  </div>
+ </div>
 </body>
 </html>

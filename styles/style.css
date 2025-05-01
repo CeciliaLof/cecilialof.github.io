@@ -1,0 +1,241 @@
+html
+{ height: 100%;}
+
+*
+{ margin: 0;
+  padding: 0;
+}
+
+body
+{ 
+    font-family: "Nunito", sans-serif;
+    background: url(hip-square.png) repeat fixed;
+    background-color: #fcf1ee;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+  border: 1px dashed #264653;
+  opacity: 0.3;
+  margin: 1.5em 0;
+}
+
+
+#main
+{
+    width: 100%;
+    max-width: 950px;
+    margin: 20px auto;
+}
+
+#main_content
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%; /* Make it responsive */
+    max-width: 950px; /* Keeps it from stretching too far */
+    padding: 0px;
+    margin: 0px auto 0 auto;
+    padding: 0;
+    background: #fcf1ee;
+    border-radius: 0px 10px 0px 0px;
+    
+}
+
+#main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#header
+{
+    width: 950px;
+    height: 102px;
+    color: #2a9d8f;
+}
+
+#footer
+{
+    height: 46px;
+    width: 100%; /* Make it responsive */
+    max-width: 950px; /* Keeps it from stretching too far */
+    margin: 1px auto 0 auto;
+    background-color: #2a9d8f;
+    border-radius: 0px 0px 10px 10px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+#footer p
+{
+    color: #fcf1ee;
+}
+
+h1, h2, h3, h4
+{
+    color: #264653;
+    margin: 0 0 5px 0;
+    padding: 5px 0 5px 0;
+}
+
+h2 a
+{
+  text-decoration: none;
+  
+}
+h2 a:hover
+{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p
+{
+    color: #264653;
+}
+
+.center
+{
+    display: block;
+    text-align: center;
+    margin: 20px auto;}
+
+#menu_bar {
+  width: 950px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 0;
+  margin-bottom: -10px; /* Pull tabs down into content slightly */
+  z-index: 2;
+}
+
+
+.tab {
+  padding: 10px 20px; /* Add space inside the tab */
+  background-color: #e9c46a;
+  color: #264653;
+  text-align: center;
+  font-size: 18px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px; /* Space between tabs */
+  /*box-shadow: inset 0 -4px 6px rgba(0, 0, 0, 0.2);*/
+  transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+#about_me_right ul {
+  padding-left: 20px; /* controls indentation */
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.tab a
+{
+    color: #264653;
+    
+}
+
+.tab:hover a {
+    color: #264653;
+    font-weight: bold;
+  }
+
+.tab:hover {
+  background-color: #f4a261; /* Darken on hover */
+  font-weight: bold;
+  
+}
+
+.tab:active {
+  background-color: #e76f51; /* Darken when clicked */
+}
+
+
+a
+{
+    text-decoration: none;
+    color: #e76f51;
+}
+a:hover
+{
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+#main, #header,#logo, #menubar, #site_content, #footer
+{ margin-left: auto; 
+  margin-right: auto;}
+  
+
+
+.column {
+  padding: 20px;
+  width: 400px; /* or whatever fixed width you want */
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+  
+  
+.column.left, .column.right {
+  flex: 1; /* Allows flexible resizing */
+  width: 45%; /* Maintain a reasonable fixed width */
+}
+
+  
+.column h2
+ {
+   text-align: center;
+ }
+
+#about_me
+{
+  padding: 0px 20px 20px 20px;
+}
+
+#about_me_right
+{
+  padding: 0px 20px 20px 20px;
+    
+ }
+
+ .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  margin: 0 auto; /* Centers the grid container itself */
+  gap: 30px;
+  padding: 2em;
+}
+
+.portfolio-item {
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.2s ease;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid #264653;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design: Adjust layout for smaller screens */
+@media (max-width: 950px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 item per row on smaller screens */
+  }
+}
