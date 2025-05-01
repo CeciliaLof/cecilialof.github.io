@@ -167,9 +167,7 @@ a
 }
 a:hover
 {
-    font-weight: bold;
-    cursor: pointer;
-    
+  cursor: pointer;  
 }
 
 #main, #header,#logo, #menubar, #site_content, #footer
@@ -210,9 +208,9 @@ a:hover
 
  .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  grid-template-columns: repeat(4, 1fr); /* 2 items per row */
   margin: 0 auto; /* Centers the grid container itself */
-  gap: 30px;
+  gap: 80px;
   padding: 2em;
 }
 
@@ -226,12 +224,14 @@ a:hover
   width: 100%;
   height: auto;
   display: block;
-  border: 2px solid #264653;
+  border: 2px dashed #264653;
 }
 
 .portfolio-item:hover {
   transform: scale(1.02);
 }
+
+
 
 /* Responsive Design: Adjust layout for smaller screens */
 @media (max-width: 950px) {
