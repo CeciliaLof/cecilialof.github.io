@@ -120,7 +120,7 @@ p
 
 .tab {
   padding: 10px 20px; /* Add space inside the tab */
-  background-color: #e9c46a;
+  background-color: #2a9d8f;
   color: #264653;
   text-align: center;
   font-size: 18px;
@@ -140,25 +140,22 @@ p
 
 .tab a
 {
-    color: #264653;
+    color: #fcf1ee;
     
 }
 
 .tab:hover a {
-    color: #264653;
-    font-weight: bold;
+    color: #fcf1ee;
   }
 
 .tab:hover {
   background-color: #f4a261; /* Darken on hover */
-  font-weight: bold;
   
 }
 
 .tab:active {
   background-color: #e76f51; /* Darken when clicked */
 }
-
 
 a
 {
@@ -211,7 +208,39 @@ a:hover
   grid-template-columns: repeat(4, 1fr); /* 2 items per row */
   margin: 0 auto; /* Centers the grid container itself */
   gap: 80px;
-  padding: 2em;
+  padding: 1em;
+}
+
+
+#portfolio-template{
+  margin: 0 auto; 
+}
+
+#portfolio-template h2{
+  text-align: center;
+  padding-top: 10px;
+  
+}
+
+#portfolio-category-content{
+  margin: auto;
+  padding: 30px;
+}
+
+
+#portfolio-category-content h2{
+  text-align: center;
+}
+
+#portfolio-category-content img{
+  display: flex;
+  margin: auto;
+  padding: 5px;
+}
+#portfolio-category-content p{
+  word-break: break-word;
+  overflow-wrap: break-word;
+  margin: auto; 
 }
 
 .portfolio-item {
