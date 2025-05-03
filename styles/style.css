@@ -111,7 +111,7 @@ p
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
-  position: relative;
+  position: static;
   top: 0;
   margin-bottom: -10px; /* Pull tabs down into content slightly */
   z-index: 2;
