@@ -219,6 +219,9 @@ a:hover {
 
 #portfolio-category-content h3 {
   padding-left: 15px;
+  color: #bd4d31;
+  background-color: #e8c468;
+  border-radius: 10px;
 }
 
 #portfolio-category-content img {
