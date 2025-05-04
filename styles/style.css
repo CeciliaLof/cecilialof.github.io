@@ -265,7 +265,7 @@ a:hover {
 }
 
 .gallery {
-  --s: 280px; /* control the size */
+  --s: 180px; /* control the size */
   --g: 10px; /* control the gap */
   --f: 1.5; /* control the scale factor */
   margin: auto;
