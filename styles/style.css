@@ -252,6 +252,9 @@ a:hover {
   display: block;
   box-shadow: 10px 10px rgba(231, 110, 80, 0.4);
   border-radius: 10px;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
 }
 
 .portfolio-item:hover {
@@ -269,7 +272,7 @@ a:hover {
 }
 
 .gallery {
-  --s: 180px; /* control the size */
+  --s: 250px; /* control the size */
   --g: 10px; /* control the gap */
   --f: 1.5; /* control the scale factor */
   margin: auto;
