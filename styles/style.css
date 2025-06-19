@@ -10,7 +10,7 @@ html {
 body {
   font-family: "Nunito", sans-serif;
   background: url(hip-square.png) repeat fixed;
-  background-color: #fcf1ee;
+  background-color: #fff7eb;
   margin: 0;
   padding: 0;
 }
@@ -37,7 +37,7 @@ hr {
   max-width: 950px;
   padding: 0px;
   margin: 0px auto 0 auto;
-  background: #fcf1ee;
+  background: #fff7eb;
   border-radius: 0px 10px 0px 0px;
   box-shadow: 10px 10px rgba(231, 110, 80, 0.4);
 }
