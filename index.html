@@ -1,84 +1,124 @@
+<!-- base template by teppyslayouts.neocities.org -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Cecilia Löf Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="styles/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-</head>
-<body>
- <div id="main">
-  <div id="header">
-    <div id="logo">
-      <h1><a href="index.html">Cecilia Löf</a></h1>
-    </div>
-    <div id="menu_bar">
-      <div class="tab" id="about-me"><a href="index.html">About Me</a></div>
-      <div class="tab" id="portfolio"><a href="portfolio.html">Portfolio</a></div>
-    </div>
-  </div>
-  <div id="main_content">
-    <div class="column left">
-      <h2>About Me</h2>
-      <div id="about_me">
-      <p>Hi, my name is Cecilia Löf</p>
-      <p>I like making 3D art and video games, and i have a lot of creative ideas and projects going on.
-        You can find my projects in the portfolio tab.
-      </p>
-      <br>
-      <p>I study at Umeå University and graduate june 2025. <br>I will have a Bachelor's degree in Philosophy, majoring in Informatics.<br> Specialization: <b>Digital Media Production</b>.</p>
-      <br>
-      <hr>
-      <h2>Where to find me</h2>
-      <p>&#128188<a href="https://se.linkedin.com/in/cecilia-l%C3%B6f-10552b361" target="_blank">Linkedin</a></p>
+<html>
+  <meta charset="UTF-8" />
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="title">
+        <div class="site-title">Cecilia Löf</div>
+        <div class="site-subtitle">Deleting the default cube</div>
+      </div>
+      <div class="banner-wrapper">
+        <a href="03art.html" target="content">
+          <div class="banner">
+            <div class="banner-img img1"></div>
+            <div class="banner-img img2"></div>
+          </div>
+        </a>
+        <div class="scroller">
+          <div class="marquee">
+            <span>
+              2025/07/27: We were promised rain and thunder but the sun was
+              shining. I was highly disappointed &middot; 2025/07/27: You can
+              never buy too many office supplies, there's always room for more
+              pens &middot;
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="left">
+        <div class="menu">
+          <a href="01home.html" target="content">home</a>
+          <a href="02blog.html" target="content">blog</a>
+          <a href="03art.html" target="content">art</a>
+          <a href="04projects.html" target="content">projects</a>
+          <a href="05links.html" target="content">links</a>
+          <!--<a href="06commissions.html" target="content">commissions</a>-->
+        </div>
+        <div class="friends">
+          <h2>INTERESTING LINKS</h2>
+          <div>
+            <a href="https://github.com/CeciliaLof/" target="_blank">
+              <img src="images/myGithubimage.png"
+            /></a>
+          </div>
+        </div>
+        <div class="small">
+          <small>Small text</small>
+        </div>
+      </div>
+      <div class="main">
+        <iframe name="content" src="01home.html" class="content"></iframe>
+      </div>
+      <div class="right">
+        <div class="profile">
+          <div class="avatar"></div>
+          <p>cecilia löf &middot; born in '92</p>
+          <p>live in northern Sweden with a daughter, fiancé and two cats</p>
+          <p>~</p>
+        </div>
+        <div class="likes">
+          <table border="2" cellspacing="0" cellpadding="6">
+            <tr>
+              <th>food</th>
+              <td>tacos</td>
+            </tr>
+            <tr>
+              <th>music</th>
+              <td>machine <br />girl</td>
+            </tr>
+            <tr>
+              <th>game</th>
+              <td>warframe</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
-    <div class="column right">
-      <h2>Experience</h2>
-      <p>Primary usage and experience in <b>bold</b></p>
-      <br>
-      <div id="about_me_right">
-      <p>&#128302<b>3D</b></p> 
-        <ul>
-        <li><b><i>Blender</i></b></li>
-        <li><i>Maya</i></li>
-        <li><i>Cinema 4D</i></li>
-        <li><i>Zbrush</i></li>
-        <li><i>Rhino CAD</i></li>
-        </ul>
-      
-        <p>&#128187<b>Programming</b></p> 
-        <ul>
-        <li><i><b>C#</b></i></li>
-        <li><i>HTML & CSS</i></li>
-        <li><i>GDScript</i></li>
-        </ul>
+    <script type="text/javascript">
+      function Marquee(selector, speed) {
+        const parentSelector = document.querySelector(selector);
+        const clone = parentSelector.innerHTML;
+        const firstElement = parentSelector.children[0];
+        let i = 0;
+        console.log(firstElement);
+        parentSelector.insertAdjacentHTML("beforeend", clone);
+        parentSelector.insertAdjacentHTML("beforeend", clone);
 
-        <p>&#127918<b>Game Development</b></p> 
-        <ul>
-        <li><i><b>Unity</b></i></li>
-        <li><i>Godot</i></li>
-        <li><i>Unreal</i></li>
-        </ul>
+        setInterval(function () {
+          firstElement.style.marginLeft = `-${i}px`;
+          if (i > firstElement.clientWidth) {
+            i = 0;
+          }
+          i = i + speed;
+        }, 0);
+      }
 
-        <p>&#127912<b>Other</b></p> 
-        <ul>
-        <li><i><b>Krita</b></i></li>
-        <li><i>Adobe Suite</i></li>
-        <li><i>Microsoft Suite</i></li>
-        <li><i>Visual Studio</i></li>
-        <li><i>Git</i></li>
+      //after window is completed load
+      //1 class selector for marquee
+      //2 marquee speed 0.2
+      window.addEventListener("load", Marquee(".marquee", 0.4));
 
-        </ul>
-      
-    </div>
-    </div>
-  </div>
-  <div id="footer">
-    <p>Cecilia Löf 2025</p>
-  </div>
- </div>
-</body>
+      const banner = document.querySelector(".banner");
+
+      const images = [
+        "images/illustration/RollingHills.jpg",
+        "images/3d/sculpts/FurDemonNewFurBG.jpg",
+        "images/3d/sculpts/spikey1.jpg",
+        "images/3d/models/girlposed.jpg",
+      ];
+
+      let index = 0;
+
+      setInterval(() => {
+        index = (index + 1) % images.length;
+        banner.style.backgroundImage = `url(${images[index]})`;
+      }, 8000); // change every 4 seconds
+    </script>
+  </body>
 </html>
