@@ -91,7 +91,7 @@
             </tr>
             <tr>
               <th>music</th>
-              <td>machine <br />girl</td>
+              <td>everything<br />everything</td>
             </tr>
             <tr>
               <th>game</th>
@@ -140,6 +140,34 @@
         index = (index + 1) % images.length;
         banner.style.backgroundImage = `url(${images[index]})`;
       }, 8000); // change every 4 seconds
+
+      const LASTFM_USER = "Mahkaite";
+      const API_KEY = "ba5b13b33e69d0bef76268fc631ef4bf";
+      const LASTFM_URL = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${LASTFM_USER}&api_key=${API_KEY}&format=json&limit=1`;
+
+      function getNowPlaying() {
+        fetch(LASTFM_URL)
+          .then((res) => res.json())
+          .then((data) => {
+            const track = data.recenttracks.track[0];
+            const isNow =
+              track["@attr"] && track["@attr"]["nowplaying"] === "true";
+            const html = `
+        <a href="${track.url}" target="_blank">
+          <strong>${isNow ? "Now Playing:" : "Recently Played:"}</strong><br>
+          ${track.artist["#text"]} – ${track.name}
+        </a>`;
+            document.getElementById("now-playing").innerHTML = html;
+          })
+          .catch((err) => {
+            document.getElementById("now-playing").textContent =
+              "♪ No song data";
+            console.error(err);
+          });
+      }
+
+      getNowPlaying();
+      setInterval(getNowPlaying, 60000); // refresh every minute
     </script>
   </body>
 </html>
