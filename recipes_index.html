@@ -1,0 +1,145 @@
+<!-- base template by teppyslayouts.neocities.org -->
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="title">
+        <div class="site-title">Cecilia Löf</div>
+        <div class="site-subtitle">Deleting the default cube</div>
+      </div>
+      <div class="banner-wrapper">
+        <a href="../index.html">
+          <div class="banner">
+            <div class="banner-img img1"></div>
+            <div class="banner-img img2"></div>
+          </div>
+        </a>
+        <div class="scroller">
+          <div class="marquee">
+            <span>
+              2025/07/29: I have a craving for delicious pancakes! &middot;
+              2025/07/29: Pro tip! Clean your dishes while the cake is baking in
+              the oven. &middot;
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="left">
+        <div class="menu">
+          <a href="../index.html" class="dropdown-btn">home</a>
+
+          <div class="dropdown">
+            <div class="dropdown-btn">breakfast</div>
+            <div class="dropdown-content">
+              <a href="recipes/breakfast/pancakes.html" target="content"
+                >pancakes</a
+              >
+              <a href="recipes/breakfast/oatmealporridge.html" target="content"
+                >oatmeal porridge</a
+              >
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <div class="dropdown-btn">lunch</div>
+            <div class="dropdown-content">
+              <a href="" target="content">nothing here yet!</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <div class="dropdown-btn">dinner</div>
+            <div class="dropdown-content">
+              <a href="" target="content">nothing here yet!</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <div class="dropdown-btn">desserts</div>
+            <div class="dropdown-content">
+              <a href="" target="content">nothing here yet!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <iframe
+          name="content"
+          src="/recipes/recipes_home.html"
+          class="content"
+        ></iframe>
+      </div>
+      <div class="right">
+        <div class="profile">
+          <div class="avatar"></div>
+          <p>cecilia löf &middot; born in '92</p>
+          <p>live in northern Sweden with a daughter, fiancé and two cats</p>
+          <p>~</p>
+        </div>
+        <div class="likes">
+          <table border="2" cellspacing="0" cellpadding="6">
+            <tr>
+              <th>food</th>
+              <td>tacos</td>
+            </tr>
+            <tr>
+              <th>music</th>
+              <td>machine <br />girl</td>
+            </tr>
+            <tr>
+              <th>game</th>
+              <td>warframe</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function Marquee(selector, speed) {
+        const parentSelector = document.querySelector(selector);
+        const clone = parentSelector.innerHTML;
+        const firstElement = parentSelector.children[0];
+        let i = 0;
+        console.log(firstElement);
+        parentSelector.insertAdjacentHTML("beforeend", clone);
+        parentSelector.insertAdjacentHTML("beforeend", clone);
+
+        setInterval(function () {
+          firstElement.style.marginLeft = `-${i}px`;
+          if (i > firstElement.clientWidth) {
+            i = 0;
+          }
+          i = i + speed;
+        }, 0);
+      }
+
+      //after window is completed load
+      //1 class selector for marquee
+      //2 marquee speed 0.2
+      window.addEventListener("load", Marquee(".marquee", 0.4));
+
+      const banner = document.querySelector(".banner");
+
+      const images = [
+        "images/illustration/RollingHills.jpg",
+        "images/3d/sculpts/FurDemonNewFurBG.jpg",
+        "images/3d/sculpts/spikey1.jpg",
+        "images/3d/models/girlposed.jpg",
+      ];
+
+      let index = 0;
+
+      setInterval(() => {
+        index = (index + 1) % images.length;
+        banner.style.backgroundImage = `url(${images[index]})`;
+      }, 8000); // change every 4 seconds
+    </script>
+  </body>
+</html>

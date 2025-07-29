@@ -352,6 +352,175 @@ video {
   height: auto;
 }
 
+.recipe-card {
+  padding: 12px;
+}
+
+.recipe-table {
+  border: 2px solid #000;
+  border-collapse: collapse;
+  font-family: "MS Gothic", sans-serif;
+  font-size: 12px;
+  background-color: #fff;
+  margin: 10px auto;
+  width: 100%;
+  table-layout: fixed;
+  word-break: break-word;
+}
+
+.image-cell {
+  width: 35%;
+}
+
+.instruction-cell {
+  width: 65%;
+}
+
+.recipe-table th,
+.recipe-table td {
+  border: 1px dotted #000;
+  padding: 6px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.image-cell img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-cell img {
+  width: 100%;
+  height: auto;
+  border: 1px dotted #000;
+  margin-bottom: 6px;
+  image-rendering: pixelated;
+}
+
+.info-block {
+  font-size: 12px;
+}
+
+.instruction-cell h2 {
+  margin-top: 0;
+  font-size: 13px;
+  border: 1px dashed #000;
+  letter-spacing: 1px;
+}
+
+.instruction-cell ol {
+  padding-left: 18px;
+  margin-top: 0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* Only apply the square to top-level dropdown buttons (categories) */
+.menu > .dropdown > .dropdown-btn:before {
+  content: " ";
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background: #000;
+  border: 2px solid #fff;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+
+.dropdown-btn {
+  display: inline-block;
+  width: 150px;
+  height: 32px;
+  line-height: 30px;
+  background: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu > .dropdown > .dropdown-btn:before {
+  content: " ";
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background: #000;
+  border: 2px solid #fff;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 0px 15px 10px 10px; /* remove top padding */
+  margin-bottom: 12px; /* add spacing *below* dropdown */
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 4px 6px;
+  font-size: 11px;
+  color: #000;
+  background: #fff;
+  border: none;
+  text-decoration: none;
+  text-align: left;
+  border-bottom: 1px dotted #000;
+  margin-bottom: 4px;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+  background-color: #f0f0f0;
+}
+
+.dropdown-content a:before {
+  display: none !important;
+  content: none !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.tooltip {
+  position: relative;
+  cursor: help; /* shows a question mark cursor */
+  border-bottom: 1px dotted #000; /* optional underline style */
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  font-size: 10px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  white-space: nowrap;
+  box-shadow: 2px 2px 0 #000;
+  text-transform: lowercase;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
 @keyframes floating {
   0% {
     transform: translate(0, 0px);
