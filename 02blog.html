@@ -6,9 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.1" />
   </head>
   <body class="page">
-    <section class="blog-post">
-      <h1 id="helloworld">Lazy day</h1>
-      <small class="date">2025-07-29</small>
+    <input type="text" id="search" placeholder="Search by tag or keyword..." />
+    <section class="blog-post" data-tags="3dcharacter art">
+      <h1 id="july25">Excited for new project!</h1>
+      <small class="date">2025 &middot; July 30</small>
+
+      <div class="content">
+        <p>
+          Today is the day i start working on a new Blender project! I usually
+          just play around and make stuff, but now i want to creat a full game
+          character from start to finish. This means that i have to be happy
+          with the design first before jumping into the 3D stuff.
+        </p>
+        <h2>🖊Project plan breakdown</h2>
+        <ol>
+          <li>Sketch out a character design that i like</li>
+          <li>
+            Illustrate a full body front and side view to be used as a 3D
+            reference.
+          </li>
+          <li>
+            Model the character! It's important to think of the polycount, it
+            will make the next steps so much easier.
+          </li>
+          <li>UV unwrap the character.</li>
+          <li>Texture the character in Substance Painter.</li>
+          <li>
+            Rig the character, and maybe make a couple of animations or poses to
+            showcase it.
+          </li>
+          <li>Post it in my projects site!</li>
+        </ol>
+        <h2>Follow along with me!</h2>
+        <p>
+          My plan is to post noteworthy updates here on my blog so you can
+          follow along. I will give some tips along the way, such as modeling
+          tips, creative tips and so on. I have learned some things and i'll
+          gladly share them with you!
+          <br /><br />Each project will get it's own personal hashtag so it will
+          be easier to filter through them later on.
+        </p>
+        <h2>Project <b>Aurora</b></h2>
+        <p>
+          As the title says, this project i will be working on is called project
+          #aurora. A fitting name for a first project in the northern
+          scandinavia, don't you think?<br />
+          <a href="https://www.picgifs.com/mini-graphics/"
+            ><img
+              src="https://www.picgifs.com/mini-graphics/mini-graphics/stars/mini-graphics-stars-861916.gif"
+              border="0"
+          /></a>
+          <br />
+          I already have some base ideas for this character:
+        </p>
+        <ul>
+          <li>A cool/tough female character.</li>
+          <li>Modern clothes/style.</li>
+          <li>
+            Fantasy features, like horns or something. Someting <i>unique</i>,
+            but not <i>too</i> unique to prevent clutter.
+          </li>
+        </ul>
+
+        <p class="tags">
+          <a href="#" class="tag" data-tag="3dcharacter">#3dcharacter</a>
+          <a href="#" class="tag" data-tag="art">#art</a>
+          <a href="#" class="tag" data-tag="aurora">#aurora</a>
+        </p>
+      </div>
+      <br />
+    </section>
+    <section class="blog-post" data-tags="weather">
+      <h1 id="july25">Lazy day</h1>
+      <small class="date">2025 &middot; July 29</small>
       <div class="content">
         <p>
           I really really want to buy some pens. When life feels a little rough,
@@ -32,11 +102,14 @@
           <i>"Good things come to those who wait"</i> as they say.
         </p>
       </div>
+      <p class="tags">
+        <a href="#" class="tag" data-tag="weather">#weather</a>
+      </p>
       <br />
     </section>
-    <section class="blog-post">
-      <h1 id="helloworld">hello world! first blog post ☕</h1>
-      <small class="date">2025-07-28</small>
+    <section class="blog-post" data-tags="website">
+      <h1 id="july25">hello world! first blog post ☕</h1>
+      <small class="date">2025 &middot; July 28</small>
       <div class="content">
         <p>
           Today i worked on this website to make it my own. I have honestly been
@@ -69,7 +142,41 @@
           <li>Honestly, the fact that i didn't make a mobile version.</li>
         </ul>
       </div>
+      <p class="tags">
+        <a href="#" class="tag" data-tag="website">#website</a>
+      </p>
       <br />
     </section>
+
+    <script>
+      const search = document.getElementById("search");
+      const posts = document.querySelectorAll(".blog-post");
+
+      function filterPosts(keyword) {
+        posts.forEach((post) => {
+          const tags = post.dataset.tags.toLowerCase();
+          const text = post.innerText.toLowerCase();
+          if (tags.includes(keyword) || text.includes(keyword)) {
+            post.style.display = "block";
+          } else {
+            post.style.display = "none";
+          }
+        });
+      }
+
+      search.addEventListener("input", (e) => {
+        const keyword = e.target.value.toLowerCase();
+        filterPosts(keyword);
+      });
+
+      document.querySelectorAll(".tag").forEach((tag) => {
+        tag.addEventListener("click", (e) => {
+          e.preventDefault();
+          const keyword = e.target.dataset.tag.toLowerCase();
+          search.value = "#" + keyword;
+          filterPosts(keyword);
+        });
+      });
+    </script>
   </body>
 </html>
