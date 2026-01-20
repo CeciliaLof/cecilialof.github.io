@@ -1,0 +1,492 @@
+/* start light mode styling */
+:root {
+  --background: #faf9f7; /* warm paper */
+  --border: #d6d3ce; /* soft gray edge */
+  --gradientTop: #fdfcfb; /* subtle paper variation */
+  --gradientBottom: #eee9e5; /* barely-there shift */
+  --text: #4a4a4a; /* ink gray */
+  --accent: #835ea1; /* muted lavender accent */
+  --accentGold: #ffc164; /* soft gold highlight */
+  --bg: rgba(236, 236, 236, 0.8); /* light cyan background */
+  --linkColor: #d35400; /* dark orange link color */
+}
+
+header {
+  background: url("***light mode banner image***");
+}
+/* end light mode styling */
+
+/* start dark mode styling */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: white;
+    --border: #5a7678;
+    --accent: #74c365;
+    --bg: rgb(0, 60, 60, 0.8);
+    --gradientBottom: rgb(0, 50, 60);
+    --gradientTop: darkslategrey;
+    a:link {
+      color: lightblue;
+    }
+  }
+  header {
+    background: url("***dark mode banner image***");
+  }
+}
+/* end dark mode styling */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/hip-square.png");
+  padding: 0px;
+  margin: 0px;
+  font-family: "MS PGothic", sans-serif;
+  color: var(--text);
+
+  /* page background pattern */
+  background-color: var(--gradientTop);
+  /*background-image:
+    linear-gradient(
+      30deg,
+      var(--bg) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--bg) 87.5%,
+      var(--bg)
+    ),
+    linear-gradient(
+      150deg,
+      var(--bg) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--bg) 87.5%,
+      var(--bg)
+    ),
+    linear-gradient(
+      30deg,
+      var(--bg) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--bg) 87.5%,
+      var(--bg)
+    ),
+    linear-gradient(
+      150deg,
+      var(--bg) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--bg) 87.5%,
+      var(--bg)
+    ),
+    linear-gradient(
+      60deg,
+      var(--bg) 25%,
+      transparent 25.5%,
+      transparent 75%,
+      var(--bg) 75%,
+      var(--bg)
+    ),
+    linear-gradient(
+      60deg,
+      var(--bg) 25%,
+      transparent 25.5%,
+      transparent 75%,
+      var(--bg) 75%,
+      var(--bg)
+    );
+  background-size: 20px 35px;
+  background-position:
+    0 0,
+    0 0,
+    10px 18px,
+    10px 18px,
+    0 0,
+    10px 18px;*/
+}
+
+.container {
+  max-width: 55rem;
+  margin: 5vw auto 12px auto;
+  border: 6px ridge var(--border);
+  outline: 3px solid var(--gradientTop);
+  outline-offset: 4px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  gap: 5px;
+  background-color: var(--gradientBottom);
+  background-image:
+    repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      var(--gradientBottom) 9px
+    ),
+    repeating-linear-gradient(var(--bg), var(--bg));
+}
+
+/* these control the column widths */
+.small {
+  flex: 1 1 15%;
+}
+
+.small section {
+  text-align: left;
+}
+
+.large {
+  flex: 1 1 75%;
+  overflow-y: auto;
+  height: 50vh; /* was height: 80vh; */
+}
+
+.full {
+  flex: 1 1 100%;
+}
+
+footer.full {
+  padding: 4px 8px; /* much smaller */
+  margin-top: 10px; /* optional: small breathing room */
+  font-size: 0.9rem; /* optional: slightly smaller text */
+  line-height: 1.2; /* reduces vertical height */
+}
+
+header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  width: 100%;
+  height: 120px;
+  border: 2px ridge var(--border);
+  border-radius: 5px;
+  position: relative;
+}
+
+header span {
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  margin: 10px;
+  font-weight: bold;
+  text-shadow:
+    1px 1px var(--text),
+    -1px 1px var(--text),
+    1px -1px var(--accent),
+    -1px -1px var(--accent);
+  color: var(--accentGold);
+}
+
+nav {
+  margin-top: 5px;
+  border: 2px ridge var(--border);
+  border-radius: 5px;
+  padding: 5px;
+  background: linear-gradient(var(--gradientTop), var(--gradientBottom));
+  max-height: 50vh;
+  overflow-y: auto;
+}
+nav div {
+  text-align: left;
+  font-size: 1.25rem;
+  margin: 5px 5px 10px 5px;
+}
+nav a {
+  display: block;
+  margin: 5px;
+  background: linear-gradient(to right, var(--bg), var(--gradientBottom));
+  border-radius: 5px;
+  padding: 2px 7px;
+  text-decoration: none;
+}
+nav a:link,
+nav a:visited {
+  color: var(--text);
+}
+nav a:hover,
+nav a:focus {
+  background: linear-gradient(
+    to right,
+    var(--bg),
+    var(--gradientBottom),
+    var(--gradientTop)
+  );
+}
+
+/* optional button styling like in the preview */
+div.small > img {
+  display: block;
+  margin: 5px auto;
+  border: 2px ridge var(--border);
+  border-radius: 5px;
+}
+
+section {
+  border: 2px ridge var(--border);
+  border-radius: 5px;
+  background: linear-gradient(var(--gradientTop), var(--gradientBottom));
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+footer a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 5px;
+  line-height: 1.2;
+}
+h1 {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+  text-align: center;
+  border-bottom: 2px ridge var(--border);
+  padding-bottom: 5px;
+}
+h2 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-align: center;
+}
+h3 {
+  font-size: 1.1rem;
+}
+h4 {
+  font-size: 1rem;
+  color: var(--accent);
+  padding-left: 12px;
+}
+
+/* prevents overflow on smaller screens */
+img {
+  max-width: 100%;
+}
+pre {
+  overflow-x: auto;
+}
+a {
+  color: var(--linkColor); /* your dark orange variable */
+  text-decoration: underline;
+}
+a:hover,
+a:focus {
+  font-style: italic;
+  color: var(--accentGold); /* your gold hover */
+}
+a:visited {
+  color: var(--accent);
+}
+
+.submenu a {
+  margin-left: 18px;
+}
+
+.tutorial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.tutorial-card {
+  display: block;
+  text-align: center;
+  padding: 6px;
+  border: 2px ridge var(--border);
+  border-radius: 6px;
+  background: var(--gradientBottom);
+  text-decoration: none;
+}
+
+.tutorial-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.tutorial-title {
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.portfolio-card {
+  display: block;
+  text-align: center;
+  padding: 6px;
+  border: 2px ridge var(--border);
+  border-radius: 6px;
+  background: var(--gradientBottom);
+  text-decoration: none;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.portfolio-title {
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+.portfolio-images img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.page-header {
+  background-size: cover;
+
+  background-repeat: repeat;
+  width: 100%;
+  height: 120px;
+  border: 2px ridge var(--border);
+  border-radius: 5px;
+  overflow: hidden; /* ensures overlay stays inside */
+}
+
+/* soft papery overlay */
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 241, 225, 0.55); /* warm paper tint */
+  pointer-events: none;
+}
+
+/* Make sure the title stays above the image */
+.page-header h1 {
+  position: relative;
+  z-index: 1;
+}
+
+.resources-list a {
+  display: block;
+  padding: 6px 10px;
+  border-left: 3px solid var(--accentGold);
+  margin-bottom: 6px;
+  text-decoration: none;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+}
+
+.about-page {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.about-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  background: var(--gradientBottom);
+  border: 2px ridge var(--border);
+}
+
+.about-page th,
+.about-page td {
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+}
+
+.about-page th {
+  background: var(--gradientTop);
+  text-align: left;
+  width: 30%;
+}
+
+.about-page h1 {
+  text-align: left;
+  border-bottom: 2px ridge var(--border);
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+.about-page em {
+  color: var(--accent);
+}
+
+/* Wikipedia-style infobox */
+.infobox {
+  float: right;
+  width: 300px;
+  margin: 0 0 15px 15px;
+  padding: 10px;
+  border: 2px ridge var(--border);
+  border-radius: 6px;
+  background: linear-gradient(var(--gradientTop), var(--gradientBottom));
+  font-size: 0.9rem;
+}
+
+.infobox h3 {
+  margin: 0 0 6px 0;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.infobox p {
+  text-align: center;
+  margin: 0 0 10px 0;
+  font-size: 0.85rem;
+}
+
+.infobox-image {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  border: 2px ridge var(--border);
+}
+
+.infobox table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.infobox th {
+  text-align: left;
+  width: 35%;
+  padding: 4px;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.infobox td {
+  padding: 4px;
+  color: var(--text);
+}
+
+.infobox a {
+  color: var(--linkColor);
+  text-decoration: underline;
+}
+
+.infobox a:hover {
+  color: var(--accentGold);
+}

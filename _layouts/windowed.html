@@ -1,0 +1,68 @@
+---
+layout: null
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/cyanobacteria.css' | relative_url }}"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header -->
+<header
+  class="full page-header"
+  {% if page.header_image %}
+    style="background-image: url('{{ page.header_image }}')"
+
+  {% elsif page.category == "about" or page.categories contains "about" %}
+    style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-leaves.png')"
+
+  {% elsif page.category == "inspirations" or page.categories contains "inspirations" %}
+    style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/pixel-heart.png')"
+
+  {% elsif page.category == "tutorials" or page.categories contains "tutorials" %}
+    style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/spikes.png')"
+
+  {% elsif page.category == "game-assets" or page.categories contains "game-assets" %}
+    style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/papyrus.png')"
+
+  {% elsif page.category == "blog" or page.categories contains "blog" %}
+    style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/light-grey-terrazzo.png')"
+
+  {% elsif page.category == "3d" or page.categories contains "3d" %}
+    style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/cutcube.png')"
+
+  {% endif %}
+>
+  <span>{{ page.title | default: site.title }}</span>
+</header>
+
+
+
+      <!-- LEFT COLUMN -->
+      <div class="small">
+        <!-- About Me box -->
+        <section>{% include about-box.html %}</section>
+
+        <!-- Navigation menu -->
+        <nav>{% include left-sidebar.html %}</nav>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <section class="large {{ page.class }}">{{ content }}</section>
+
+      <!-- Footer -->
+      <footer class="full">
+        <p>{{ site.title }} — {{ site.description }}</p>
+      </footer>
+    </div>
+  </body>
+</html>
