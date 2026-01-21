@@ -2,8 +2,7 @@
 layout: windowed
 title: "Cozy Potted Plants"
 category: "game-assets"
-images:
-  - /assets/img/portfolio/game-assets/cutePlants/FrontView.jpg
+thumbnail: /assets/img/portfolio/game-assets/cutePlants/FrontView.jpg
 ---
 
 # Cute Plants

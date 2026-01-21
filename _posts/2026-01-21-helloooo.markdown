@@ -1,0 +1,14 @@
+---
+layout: windowed
+title: "First Blog Post!"
+images: -https://suriyasonphu.com/post/markdown-syntax/markdown-image-800_hu_7f02c1208739ce85.webp
+---
+
+# My very first blog post!
+
+_First of all, how fantastic it is to finally understand a static website generator?!_
+
+I thought it felt so complicated to use html to make blog posts, it eventually got so messy with a specific div for each post and it was a nightmare to manage. This is just different markdown files without all that html code crap.
+This is much more managable and markdown is something you learn so quickly too!
+
+I'm working on making a markdown cheat sheet for myself in the [tutorials](/tutorials/) section but you're free to be inspired there too. It's mostly for me to see how it looks with the theme and to remember what to type.

@@ -22,10 +22,19 @@ This website is best viewed on a computer.
 <ul>
   {% for post in site.posts limit:5 %}
     <li>
+      {% if forloop.first %}
+        <img src="https://blob.gifcities.org/gifcities/KL33U2FD3XNURP422AOCESLUIOFYK3VL.gif"
+             alt="New!"
+             style="width:32px;  margin-right:6px;">
+      {% endif %}
+
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+
       <span style="font-size:0.8rem; color:var(--accent);">
         — {{ post.date | date: "%Y-%m-%d" }}
       </span>
     </li>
-  {% endfor %}
+
+{% endfor %}
+
 </ul>

@@ -9,7 +9,7 @@ category: "about"
   <img src="/assets/img/cecilia.jpg" alt="Portrait of Cecilia" class="infobox-image">
 
   <h3>Cecilia Löf</h3>
-  <p><em>Digital Artist • 3D Tinkerer • Cozy Web Enthusiast</em></p>
+  <p><em>Digital Artist • 3D Fanatic • Game Addict • Mother</em></p>
 
   <table>
     <tr><th>Country</th><td>Sweden</td></tr>
@@ -23,7 +23,7 @@ category: "about"
 
 # Cecilia Löf
 
-_Digital artist, 3D tinkerer, cozy‑web enthusiast._
+_Digital artist, 3D fanatic, game addict._
 
 ---
 
@@ -52,3 +52,17 @@ I have been making game projects in both Unity and Unreal, but i really want to 
 
 - I really like brass as a complementary color
 - Really misses the old internet websites
+
+---
+
+## Technical skills
+
+**Blender**
+
+- 3D modelling, rigging, animating, UV mapping and texturing.
+- Basically the whole workflow to create game ready assets.
+
+**Substance Painter**
+
+- Texturing(obviously hehe) but also baking the textures.
+- Basic (but pretty good) understanding of how smart materials work by using black masks and generators and a good folder structure.
