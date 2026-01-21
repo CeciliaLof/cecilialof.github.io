@@ -84,4 +84,4 @@ I have been making game projects in both Unity and Unreal, but i really want to 
 **Unity**
 
 - Basically the same as Unreal.
-- I have tried for years but C# is really hard. Programming is hard! That part of my brain is on sleep mode.
+- I have tried for years but C# is really hard. Programming is hard! That part of my brain is on sleep mode. 
