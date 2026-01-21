@@ -2,6 +2,7 @@
 layout: windowed
 title: "Game Assets"
 category: "game-assets"
+header_image: "https://www.toptal.com/designers/subtlepatterns/uploads/papyrus.png"
 ---
 
 <h1>{{ page.title }}</h1>

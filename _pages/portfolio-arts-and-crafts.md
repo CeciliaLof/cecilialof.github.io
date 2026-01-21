@@ -2,6 +2,7 @@
 layout: windowed
 title: "Arts and Crafts"
 category: "arts-and-crafts"
+header_image: "https://www.toptal.com/designers/subtlepatterns/uploads/papyrus.png"
 ---
 
 <h1>{{ page.title }}</h1>

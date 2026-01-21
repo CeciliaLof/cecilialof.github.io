@@ -51,6 +51,13 @@ collections:
     output: true
     permalink: /tutorials/:name/
 
+defaults:
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      header_image: "https://www.toptal.com/designers/subtlepatterns/uploads/papyrus.png"
+
 navigation:
   - title: "Home"
     url: "/"

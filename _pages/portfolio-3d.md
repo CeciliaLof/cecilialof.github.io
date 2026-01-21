@@ -2,6 +2,7 @@
 layout: windowed
 title: "3D"
 category: "3d"
+header_image: "https://www.toptal.com/designers/subtlepatterns/uploads/papyrus.png"
 ---
 
 <h1>{{ page.title }}</h1>

@@ -16,53 +16,87 @@ layout: null
 
   <body>
     <div class="container">
+
       <!-- Header -->
-<header
-  class="full page-header"
-  {% if page.header_image %}
-    style="background-image: url('{{ page.header_image }}')"
-
-  {% elsif page.category == "about" or page.categories contains "about" %}
-    style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-leaves.png')"
-
-  {% elsif page.category == "inspirations" or page.categories contains "inspirations" %}
-    style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/pixel-heart.png')"
-
-  {% elsif page.category == "tutorials" or page.categories contains "tutorials" %}
-    style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/spikes.png')"
-
-  {% elsif page.category == "game-assets" or page.categories contains "game-assets" %}
-    style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/papyrus.png')"
-
-  {% elsif page.category == "blog" or page.categories contains "blog" %}
-    style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/light-grey-terrazzo.png')"
-
-  {% elsif page.category == "3d" or page.categories contains "3d" %}
-    style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/cutcube.png')"
-
-  {% endif %}
->
-  <span>{{ page.title | default: site.title }}</span>
-</header>
-
-
+      <header
+        class="full page-header"
+        {% if page.header_image %}
+          style="background-image: url('{{ page.header_image }}')"
+        {% elsif page.collection == "portfolio" %}
+          style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/papyrus.png')"
+        {% elsif page.category == "about" or page.categories contains "about" %}
+          style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-leaves.png')"
+        {% elsif page.category == "inspirations" or page.categories contains "inspirations" %}
+          style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/pixel-heart.png')"
+        {% elsif page.category == "tutorials" or page.categories contains "tutorials" %}
+          style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/spikes.png')"
+        {% elsif page.category == "blog" or page.categories contains "blog" %}
+          style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/light-grey-terrazzo.png')"
+        {% endif %}
+      >
+        <span>{{ page.title | default: site.title }}</span>
+      </header>
 
       <!-- LEFT COLUMN -->
       <div class="small">
-        <!-- About Me box -->
-        <section>{% include about-box.html %}</section>
+        <section>
+          {% include about-box.html %}
+        </section>
 
-        <!-- Navigation menu -->
-        <nav>{% include left-sidebar.html %}</nav>
+        <nav>
+          {% include left-sidebar.html %}
+        </nav>
       </div>
 
       <!-- MAIN CONTENT -->
-      <section class="large {{ page.class }}">{{ content }}</section>
-
+      <section class="large {{ page.class }}">
+        {{ content }}
+        
+      </section>
+      
       <!-- Footer -->
       <footer class="full">
         <p>{{ site.title }} — {{ site.description }}</p>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const modal = document.getElementById("image-modal");
+            const modalImg = document.getElementById("modal-image");
+            const closeBtn = document.querySelector(".close-btn");
+
+            document.querySelectorAll(".click-to-enlarge").forEach(img => {
+              img.addEventListener("click", () => {
+                modal.style.display = "flex";
+                modalImg.src = img.src;
+              });
+            });
+
+            closeBtn.addEventListener("click", () => {
+              modal.style.display = "none";
+            });
+
+            modal.addEventListener("click", (e) => {
+              if (e.target === modal) modal.style.display = "none";
+            });
+          });
+        </script>
+
+        <script>
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+          link.setAttribute('target', '_blank');
+          });
+          </script>
+
       </footer>
+        
+    </div>
+            <!-- Image Modal -->
+    <div id="image-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img id="modal-image" src="" alt="">
+      </div>
     </div>
   </body>
+
 </html>
