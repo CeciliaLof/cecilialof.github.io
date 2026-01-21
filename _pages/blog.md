@@ -1,7 +1,6 @@
 ---
 layout: windowed
 title: "Blog"
-paginate: true
 category: "blog"
 ---
 

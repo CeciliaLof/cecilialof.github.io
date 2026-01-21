@@ -41,13 +41,15 @@ sass:
   style: compressed
 
 collections:
-  tutorials:
+  pages:
     output: true
-    permalink: /tutorials/:name/
-
+    permalink: /:name/
   portfolio:
     output: true
     permalink: /portfolio/:name/
+  tutorials:
+    output: true
+    permalink: /tutorials/:name/
 
 navigation:
   - title: "Home"
