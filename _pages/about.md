@@ -62,8 +62,26 @@ I have been making game projects in both Unity and Unreal, but i really want to 
 
 - 3D modelling, rigging, animating, UV mapping and texturing.
 - Basically the whole workflow to create game ready assets.
+- Have an understanding of nodes.
 
 **Substance Painter**
 
-- Texturing(obviously hehe) but also baking the textures.
-- Basic (but pretty good) understanding of how smart materials work by using black masks and generators and a good folder structure.
+- Texturing (obviously hehe) but also baking the textures.
+- Basic (but pretty good) understanding of how smart materials work by using black masks. and generators and a good folder structure.
+
+**Figma**
+
+- Able to create good (according to me) designs.
+- Can create different flows with cool effects (for apps and stuff).
+- A great tool to quickly make game UI elements on (even working prototypes).
+
+**Unreal Engine**
+
+- Can create basic blueprints and understand how they can be set up.
+- I'm not good at level design but i know how to set up a scene so it looks decent.
+- Can create simple materials for different purposes
+
+**Unity**
+
+- Basically the same as Unreal.
+- I have tried for years but C# is really hard. Programming is hard! That part of my brain is on sleep mode.
