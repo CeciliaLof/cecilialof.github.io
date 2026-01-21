@@ -51,6 +51,9 @@ collections:
     output: true
     permalink: /tutorials/:name/
 
+include:
+  - data
+
 defaults:
   - scope:
       path: ""
