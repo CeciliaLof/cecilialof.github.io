@@ -98,6 +98,29 @@ layout: null
         <img id="modal-image" src="" alt="">
       </div>
     </div>
+
+
+    <script>
+      fetch("https://api.github.com/repos/USERNAME/REPO/commits")
+        .then(res => res.json())
+        .then(data => {
+          const commit = data[0];
+          const message = commit.commit.message;
+          const url = commit.html_url;
+          const date = commit.commit.author.date.substring(0, 10);
+
+          document.getElementById("latest-commit").innerHTML = `
+            <strong>Latest update:</strong>
+            <a href="${url}" target="_blank">${message}</a>
+            <span style="opacity:0.7;">— ${date}</span>
+          `;
+        })
+        .catch(() => {
+          document.getElementById("latest-commit").innerHTML =
+            "Could not load latest update.";
+        });
+      </script>
+
   </body>
 
 </html>

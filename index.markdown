@@ -38,3 +38,11 @@ This website is best viewed on a computer.
 {% endfor %}
 
 </ul>
+
+---
+
+## Latest Website Update
+
+<div id="latest-commit" class="latest-commit-box">
+  Loading latest update~
+</div>

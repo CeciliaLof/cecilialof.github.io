@@ -587,3 +587,12 @@ a:visited {
 .large tr:nth-child(even) {
   background: rgba(255, 255, 255, 0.15);
 }
+
+.latest-commit-box {
+  font-size: 0.85rem;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-top: 10px;
+  background: linear-gradient(var(--gradientTop), var(--gradientBottom));
+}
