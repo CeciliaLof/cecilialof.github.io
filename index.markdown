@@ -15,6 +15,8 @@ I really love the old school internet and i'm not a big fan of the gigantic site
 I'm not sure if this site is mobile friendly, and that is kind of the point since i think we use our phones _too much_.
 This website is best viewed on a computer.
 
+<br><br><br><br><br>
+
 ---
 
 ## Latest Blog Posts
