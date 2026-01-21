@@ -607,17 +607,27 @@ a:visited {
   overflow: hidden;
   margin-top: 20px;
 }
-
+@keyframes sway {
+  0% {
+    transform: translate(-50%, -50%) rotate(-5deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(5deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-5deg);
+  }
+}
 .meadow-plant {
   position: absolute;
-  font-size: 1.8rem;
+  font-size: 0.8rem;
   transform: translate(-50%, -50%);
   animation: sway 3s ease-in-out infinite;
   transition: transform 0.2s ease;
 }
 
 .meadow-plant:hover {
-  transform: translate(-50%, -50%) scale(1.3);
+  transform: translate(-50%, -50%) scale(1.2);
 
   .plant-buttons {
     display: flex;
@@ -632,17 +642,5 @@ a:visited {
     background: var(--accentLight);
     text-decoration: none;
     font-size: 1rem;
-  }
-
-  @keyframes sway {
-    0% {
-      transform: translate(-50%, -50%) rotate(-2deg);
-    }
-    50% {
-      transform: translate(-50%, -50%) rotate(2deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(-2deg);
-    }
   }
 }
