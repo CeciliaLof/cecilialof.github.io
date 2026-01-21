@@ -1,7 +1,7 @@
 ---
 layout: windowed
-title: "Arts and Crafts"
-category: "arts-and-crafts"
+title: "Game Projects"
+category: "game-projects"
 header_image: "https://www.toptal.com/designers/subtlepatterns/uploads/papyrus.png"
 ---
 

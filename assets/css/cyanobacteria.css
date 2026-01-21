@@ -165,17 +165,14 @@ header {
 }
 
 header span {
+  font-family: "Fira Code", monospace;
   font-size: 2.5rem;
   position: absolute;
   bottom: 0;
   right: 10px;
   margin: 10px;
   font-weight: bold;
-  text-shadow:
-    1px 1px var(--text),
-    -1px 1px var(--text),
-    1px -1px var(--accent),
-    -1px -1px var(--accent);
+  text-shadow: 2px 2px 2px var(--accent);
   color: var(--accentGold);
 }
 
@@ -562,4 +559,31 @@ a:visited {
   background: linear-gradient(var(--gradientTop), var(--gradientBottom));
   margin-bottom: 10px;
   opacity: 0.85;
+}
+
+/* Cozy framed tables for Markdown */
+.large table {
+  width: auto;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: linear-gradient(var(--gradientTop), var(--gradientBottom));
+  border: 3px var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.large th,
+.large td {
+  border: 2px ridge var(--border);
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.large th {
+  background: var(--accentLight);
+  font-weight: bold;
+}
+
+.large tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.15);
 }

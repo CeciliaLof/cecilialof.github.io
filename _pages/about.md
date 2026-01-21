@@ -30,9 +30,9 @@ _Digital artist, 3D fanatic, game addict._
 ## Overview
 
 Hello! I'm an art enthusiast and i love creating 3D models and illustrate. I am a very creative person who loves to find new hobbies to dive into.
-The most recent one is journaling with stickers and everything. I also bought a loooong stapler so i can make zines.
 
-If there's something i **really** like it's to go into a hobby rabbit hole and discover hobbies and crafts i didn't even know existed. It keeps life exciting!
+The most recent one is journaling with stickers and everything. I also bought a loooong stapler so i can make zines.
+If there's something i **really** like it's to go into a hobby rabbit hole (try saying that ten times quickly) and discover hobbies and crafts i didn't even know existed. It keeps life exciting!
 
 I have been making game projects in both Unity and Unreal, but i really want to learn Godot more so i'm experimenting there. I'll hopefully update the blog with lots of fun stuff!
 
@@ -52,6 +52,7 @@ I have been making game projects in both Unity and Unreal, but i really want to 
 
 - I really like brass as a complementary color
 - Really misses the old internet websites
+- Ugh i wish i could make music, i have tried over and over but i just can't. I can at least make my own sound effects for games but that's about it.
 
 ---
 

@@ -10,5 +10,6 @@ _First of all, how fantastic it is to finally understand a static website genera
 
 I thought it felt so complicated to use html to make blog posts, it eventually got so messy with a specific div for each post and it was a nightmare to manage. This is just different markdown files without all that html code crap.
 This is much more managable and markdown is something you learn so quickly too!
+I'm using something called Jekyll, that is a static website generator. It has a bit of a learning curve but it's easier to manage than pure html and css.
 
 I'm working on making a markdown cheat sheet for myself in the [tutorials](/tutorials/) section but you're free to be inspired there too. It's mostly for me to see how it looks with the theme and to remember what to type.

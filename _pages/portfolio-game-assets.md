@@ -11,7 +11,7 @@ header_image: "https://www.toptal.com/designers/subtlepatterns/uploads/papyrus.p
   {% assign items = site.portfolio | where: "category", page.category %}
   {% for item in items %}
     <a class="portfolio-card" href="{{ item.url | relative_url }}">
-      {% if item.images %}
+      {% if item.thumbnail %}
         <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title }}">
       {% endif %}
       <div class="portfolio-title">{{ item.title }}</div>
