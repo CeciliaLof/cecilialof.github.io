@@ -139,7 +139,7 @@ body {
 .large {
   flex: 1 1 75%;
   overflow-y: auto;
-  height: 50vh; /* was height: 80vh; */
+  height: 700px; /* was height: 80vh; */
 }
 
 .full {
