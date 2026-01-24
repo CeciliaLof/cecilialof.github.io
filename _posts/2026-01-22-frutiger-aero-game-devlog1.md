@@ -1,6 +1,8 @@
 ---
 layout: windowed
 title: "Frutiger Aero Game Devlog 1"
+tags:
+  - frutiger-aero-devlog
 ---
 
 # Devlog 1 - Let's do this!

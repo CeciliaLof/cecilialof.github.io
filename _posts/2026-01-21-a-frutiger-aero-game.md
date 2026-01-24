@@ -1,6 +1,8 @@
 ---
 layout: windowed
 title: "A fruitger aero game"
+tags:
+  - frutiger-aero-devlog
 ---
 
 ![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3797460/1e361f6ed83dc2b821eabb63d04bf3c0d7b06fe5/ss_1e361f6ed83dc2b821eabb63d04bf3c0d7b06fe5.1920x1080.jpg?t=1765820388){: .click-to-enlarge }
