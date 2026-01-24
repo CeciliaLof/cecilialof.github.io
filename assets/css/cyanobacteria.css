@@ -271,6 +271,8 @@ h4 {
 /* prevents overflow on smaller screens */
 img {
   max-width: 100%;
+  border-radius: 4px;
+  border-style: outset;
 }
 pre {
   overflow-x: auto;
@@ -343,6 +345,7 @@ a:visited {
   height: 100px;
   object-fit: cover;
   border-radius: 4px;
+  border-style: none;
 }
 
 .portfolio-title {

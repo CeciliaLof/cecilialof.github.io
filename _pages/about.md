@@ -17,7 +17,7 @@ category: "about"
     <tr><th>Specialties</th><td>3D modelling, Illustration, Arts and crafts</td></tr>
     <tr><th>Tools</th><td>Blender, Krita, Figma, Substance Painter, Adobe Suite, Unreal, Unity</td></tr>
     <tr><th>Game</th><td>Warframe</td></tr>
-    <tr><th>Song</th><td>Aphex Twin - #3</td></tr>
+    <tr><th>Music</th><td>Breakcore</td></tr>
   </table>
 </div>
 
@@ -84,4 +84,4 @@ I have been making game projects in both Unity and Unreal, but i really want to 
 **Unity**
 
 - Basically the same as Unreal.
-- I have tried for years but C# is really hard. Programming is hard! That part of my brain is on sleep mode. 
+- I have tried for years but C# is really hard. Programming is hard! That part of my brain is on sleep mode.
