@@ -2,12 +2,12 @@
 layout: windowed
 title: "Holme"
 category: "game-projects"
-thumbnail: "/assets/img/portfolio/game-projects/holme/splash.png"
+thumbnail: "/assets/img/portfolio/game-projects/holme/Splash.png"
 ---
 
 # Holme
 
-![Splash Art](/assets/img/portfolio/game-projects/holme/splash.png){: .click-to-enlarge }
+![Splash Art](/assets/img/portfolio/game-projects/holme/Splash.png){: .click-to-enlarge }
 
 This is a project my friend Lina and i are working on. It started out as many ideas at the same time but we are slowly working out, chiseling away, at the core gameplay.
 We are letting ourselves be free and creative and create lots of ideas instead of just restricting ourselves.

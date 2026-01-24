@@ -272,7 +272,6 @@ h4 {
 img {
   max-width: 100%;
   border-radius: 4px;
-  border-style: outset;
 }
 pre {
   overflow-x: auto;
@@ -646,4 +645,10 @@ a:visited {
     text-decoration: none;
     font-size: 1rem;
   }
+}
+
+img:not([src$=".gif"]):not([src$=".webm"]) {
+  max-width: 100%;
+  border-radius: 4px;
+  border-style: outset;
 }
