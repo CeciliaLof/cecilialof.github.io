@@ -15,7 +15,9 @@ _I'll eventually create a tutorial for it_
 
 ---
 
-- This asset pack is actually available for download on itch.io [Download on Itch.io](https://littleleaf3d.itch.io/cozy-potted-plants "Itch.io")
+- This asset pack is actually available for download on itch.io!
+
+<iframe frameborder="0" src="https://itch.io/embed/4199168?linkback=true" width="552" height="167"><a href="https://littleleaf3d.itch.io/cozy-potted-plants">Cozy Potted Plants by LittleLeaf3D</a></iframe>
 
 - It will eventually end up on the Unity Asset store, it's pending right now. I'll update it when it publishes!
 
